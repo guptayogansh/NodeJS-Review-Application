@@ -22,7 +22,7 @@ function review(response,reviewData){
 	console.log('Executing review handler');
 
   response.writeHead(200,{'Content-Type':'text/plain'});
-  response.write("Your review is:"+ querystring.parse(reviewData).text);
+  response.write("New Review:"+ querystring.parse(reviewData).text);
   response.end();
 }
 
